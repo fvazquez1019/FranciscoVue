@@ -60,9 +60,9 @@ const model = ref([
                 ]
             },
             {
-                label: 'Crud',
+                label: 'Country Graph',
                 icon: 'pi pi-fw pi-pencil',
-                to: '/pages/crud'
+                to: '/pages/CountryGraph'
             },
             {
                 label: 'Not Found',
