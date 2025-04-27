@@ -1,10 +1,27 @@
 <script setup>
 import FloatingConfigurator from '@/components/FloatingConfigurator.vue';
 import { ref } from 'vue';
+import { db } from '@/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 const email = ref('');
 const password = ref('');
 const checked = ref(false);
+const saveUser = async () => {
+  try {
+    await addDoc(collection(db, "/users"), {
+      username: email.value,
+      password: password.value
+    });
+    alert('User saved to Firebase!');
+    
+    // Optional: Reset fields after saving
+    email.value = '';
+    password.value = '';
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+};
 </script>
 
 <template>
@@ -32,7 +49,7 @@ const checked = ref(false);
                             </g>
                         </svg>
                         <div class="text-surface-900 dark:text-surface-0 text-3xl font-medium mb-4">Welcome to Spotify Visualizer!</div>
-                        <span class="text-muted-color font-medium">Sign in to continue</span>
+                        <span class="text-muted-color font-medium">Please create an account</span>
                     </div>
 
                     <div>
@@ -42,19 +59,8 @@ const checked = ref(false);
                         <label for="password1" class="block text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Password</label>
                         <Password id="password1" v-model="password" placeholder="Password" :toggleMask="true" class="mb-4" fluid :feedback="false"></Password>
 
-                        <div class="flex items-center justify-between mt-2 mb-8 gap-8">
-                            <!--<div class="flex items-center">
-                                <Checkbox v-model="checked" id="rememberme1" binary class="mr-2"></Checkbox>
-                                <label for="rememberme1">Remember me</label>
-                            </div>
-                            <span class="font-medium no-underline ml-2 text-right cursor-pointer text-primary">Forgot password?</span> -->
-                        </div> 
-                        <Button label="Sign In" class="w-full" as="router-link" to="/"></Button>
-                        <div>
-                            <br>
-                        </div>
-                        <Button label="Register a new account" class="w-full" as="router-link" to="/auth/register"></Button>
-                        
+                        <Button label="Register Account"  @click="saveUser" class="w-full" as="router-link" to="/"></Button>
+                        <Button label="Sign in with Google" class="w-full" as="router-link" to="/"></Button>
                     </div>
                 </div>
             </div>

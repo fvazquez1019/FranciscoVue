@@ -9,9 +9,9 @@ const model = ref([
         items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
     },
     {
-        label: 'UI Components',
+        label: 'UI Components (remove later)',
         items: [
-            { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
+            { label: 'Form Layout ', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
             { label: 'Input', icon: 'pi pi-fw pi-check-square', to: '/uikit/input' },
             { label: 'Button', icon: 'pi pi-fw pi-mobile', to: '/uikit/button', class: 'rotated-icon' },
             { label: 'Table', icon: 'pi pi-fw pi-table', to: '/uikit/table' },
@@ -34,12 +34,12 @@ const model = ref([
         to: '/pages',
         items: [
             {
-                label: 'Landing',
+                label: 'Landing (remove later)',
                 icon: 'pi pi-fw pi-globe',
                 to: '/landing'
             },
             {
-                label: 'Auth',
+                label: 'Auth (move to top right)',
                 icon: 'pi pi-fw pi-user',
                 items: [
                     {
@@ -72,7 +72,7 @@ const model = ref([
             },
             
             {
-                label: 'Not Found',
+                label: 'Not Found (remove later)',
                 icon: 'pi pi-fw pi-exclamation-circle',
                 to: '/pages/notfound'
             },
@@ -84,7 +84,7 @@ const model = ref([
         ]
     },
     {
-        label: 'Hierarchy',
+        label: 'Hierarchy (commenting this out breaks things, just delete)',
         items: [
             {
                 label: 'Submenu 1',
@@ -131,14 +131,14 @@ const model = ref([
         label: 'Get Started',
         items: [
             {
-                label: 'Documentation',
+                label: 'Documentation (remove later)',
                 icon: 'pi pi-fw pi-book',
                 to: '/documentation'
             },
             {
                 label: 'View Source',
                 icon: 'pi pi-fw pi-github',
-                url: 'https://github.com/primefaces/sakai-vue',
+                url: /*'https://github.com/primefaces/sakai-vue'*/ 'https://github.com/fvazquez1019/FranciscoVue',
                 target: '_blank'
             }
         ]

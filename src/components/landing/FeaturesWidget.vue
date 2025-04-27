@@ -51,7 +51,7 @@ Listening</span>
                             <i class="pi pi-fw pi-id-card !text-2xl text-slate-700"></i>
                         </div>
                         <div class="mt-6 mb-1 text-surface-900 dark:text-surface-0 text-xl font-semibold">Responsive Layout</div>
-                        <span class="text-surface-600 dark:text-surface-200">Nulla malesuada pellentesque elit.</span>
+                        <span class="text-surface-600 dark:text-surface-200">Button clicky feel good.</span>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ Listening</span>
                             <i class="pi pi-fw pi-moon !text-2xl text-pink-700"></i>
                         </div>
                         <div class="mt-6 mb-1 text-surface-900 dark:text-surface-0 text-xl font-semibold">Dark Mode</div>
-                        <span class="text-surface-600 dark:text-surface-200">Convallis tellus id interdum velit laoreet.</span>
+                        <span class="text-surface-600 dark:text-surface-200">Finally you won't go blind.</span>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ Listening</span>
                             <i class="pi pi-fw pi-globe !text-2xl text-blue-700"></i>
                         </div>
                         <div class="mt-6 mb-1 text-surface-900 dark:text-surface-0 text-xl font-semibold">Music Discovery</div>
-                        <span class="text-surface-600 dark:text-surface-200">Elementum nibh tellus molestie nunc non.</span>
+                        <span class="text-surface-600 dark:text-surface-200">Everyone can afford to find more music to listen to.</span>
                     </div>
                 </div>
             </div>

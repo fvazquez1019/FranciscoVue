@@ -4,7 +4,7 @@
       <div class="text-center mb-4">
         <h2 class="text-3xl font-bold">Explore New Music by Country </h2>
         <p class="text-lg text-gray-600 mt-2 max-w-screen-md mx-auto">
-          Discover how music varies across countries. Click a country name on the graph to hear a Spotify playlist taht highlight some of the most unique and different music being consumed in these countries. This hypotheticlly remaps the countries of our world by the characteristics of their music.
+          Discover how music varies across countries. Click a country name on the graph to hear a Spotify playlist that highlights some of the most unique and different music being consumed in these countries. This hypotheticlly remaps the countries of our world by the characteristics of their music.
         </p>
       </div>
   
@@ -12,7 +12,7 @@
         <template #title>Music Map</template>
         <template #content>
             
-          <svg ref="chartRef" class="w-full" style="height: 400px;" />
+          <svg ref="chartRef" class="w-full" style="height: 600px;" />
         </template>
       </Card>
     </div>
