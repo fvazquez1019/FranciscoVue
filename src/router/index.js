@@ -95,15 +95,21 @@ const router = createRouter({
                     component: () => import('@/views/pages/Empty.vue')
                 },
                 {
-                    path: '/pages/crud',
-                    name: 'crud',
-                    component: () => import('@/views/pages/Crud.vue')
+                    path: '/pages/CountryGraph',
+                    name: 'CountryGraph',
+                    component: () => import('@/views/pages/CountryGraph.vue')
                 },
                 {
                     path: '/documentation',
                     name: 'documentation',
                     component: () => import('@/views/pages/Documentation.vue')
-                }
+                },
+                {
+                    path: '/pages/VennDiagram',
+                    name: 'VennDiagram',
+                    component: () => import('@/views/pages/VennDiagram.vue')
+                },
+        
             ]
         },
         {
@@ -116,6 +122,7 @@ const router = createRouter({
             name: 'notfound',
             component: () => import('@/views/pages/NotFound.vue')
         },
+
 
         {
             path: '/auth/login',

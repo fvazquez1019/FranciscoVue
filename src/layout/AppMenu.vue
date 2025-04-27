@@ -29,8 +29,8 @@ const model = ref([
         ]
     },
     {
-        label: 'Pages',
-        icon: 'pi pi-fw pi-briefcase',
+        label: 'Discovery',
+        icon: 'pi pi-fw pi-sparkles',
         to: '/pages',
         items: [
             {
@@ -60,10 +60,17 @@ const model = ref([
                 ]
             },
             {
-                label: 'Crud',
-                icon: 'pi pi-fw pi-pencil',
-                to: '/pages/crud'
+                label: 'Country Graph',
+                icon: 'pi pi-fw pi-map',
+                to: '/pages/CountryGraph'
             },
+
+            {
+                label: 'VennDiagram',
+                icon: 'pi pi-fw pi-link',
+                to: '/pages/VennDiagram'
+            },
+            
             {
                 label: 'Not Found',
                 icon: 'pi pi-fw pi-exclamation-circle',
