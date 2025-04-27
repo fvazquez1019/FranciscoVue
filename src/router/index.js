@@ -118,6 +118,11 @@ const router = createRouter({
             component: () => import('@/views/pages/Landing.vue')
         },
         {
+            path: '/callback',
+            name: 'callback',
+            component:  () => import('@/views/pages/auth/Callback.vue') 
+        },
+        {
             path: '/pages/notfound',
             name: 'notfound',
             component: () => import('@/views/pages/NotFound.vue')

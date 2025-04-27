@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {getFirestore, grtFirestore} from "firebase/firestore";
+import {getFirestore} from "firebase/firestore";
 
 import Aura from '@primeuix/themes/aura';
 import PrimeVue from 'primevue/config';

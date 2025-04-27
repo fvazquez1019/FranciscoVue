@@ -7,7 +7,7 @@
         <div class="mx-6 md:mx-20 mt-0 md:mt-6">
             <h1 class="text-6xl font-bold text-gray-900 leading-tight"><span class="font-light block">See your sound</span>Visualize music in a brand new way.</h1>
             <p class="font-normal text-2xl leading-normal md:mt-4 text-gray-700">Music says a lot about who we are — and now you can see it like never before. Our website turns your Spotify listening history into stunning visual insights, uncovering the rhythms, genres, and habits that shape your sound. From your favorite tracks to hidden trends you didn’t even realize, explore your music journey in a whole new way. Ready to discover your unique audio identity?</p>
-            <Button label="Get Started" as="router-link" to="/auth/login" rounded class="!text-xl mt-8 !px-4"></Button>
+            <Button label="Get Started" as="router-link" to="/auth/register" rounded class="!text-xl mt-8 !px-4"></Button>
         </div>
         <div class="flex justify-center md:justify-end">
             <img src="/demo/images/landing/ChatGPT Image Apr 20, 2025, 11_02_23 AM.png" alt="Hero Image" class="w-9/12 md:w-auto" />
