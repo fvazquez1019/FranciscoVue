@@ -30,7 +30,7 @@ const { toggleMenu, toggleDarkMode, isDarkTheme } = useLayout();
                     </g>
                 </svg>
 
-                <span>Francisco and Carson's Website</span>
+                <span>Spotify Visualizer</span>
             </router-link>
         </div>
 

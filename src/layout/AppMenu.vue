@@ -22,12 +22,7 @@ const model = ref([
         icon: 'pi pi-fw pi-sparkles',
         to: '/pages',
         items: [
-            {
-                label: 'Landing (remove later)',
-                icon: 'pi pi-fw pi-globe',
-                to: '/landing'
-            },
-            {
+            /*{
                 label: 'Auth (move to top right)',
                 icon: 'pi pi-fw pi-user',
                 items: [
@@ -52,7 +47,7 @@ const model = ref([
                         to: '/auth/access'
                     }
                 ]
-            },
+            },*/
             {
                 label: 'Country Graph',
                 icon: 'pi pi-fw pi-map',
@@ -64,14 +59,8 @@ const model = ref([
                 icon: 'pi pi-fw pi-link',
                 to: '/pages/VennDiagram'
             },
-            
             {
-                label: 'Not Found (remove later)',
-                icon: 'pi pi-fw pi-exclamation-circle',
-                to: '/pages/notfound'
-            },
-            {
-                label: 'Empty',
+                label: 'Taste Map',
                 icon: 'pi pi-fw pi-circle-off',
                 to: '/pages/empty'
             }

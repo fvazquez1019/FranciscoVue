@@ -16,6 +16,7 @@ const saveUser = async () => {
     alert('Account created successfully!');
     email.value = '';
     password.value = '';
+    router.push('/')
   } catch (e) {
     console.error("Error creating user:", e.message);
     alert(e.message);

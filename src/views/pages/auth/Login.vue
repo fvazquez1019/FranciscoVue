@@ -49,13 +49,7 @@ const loginWithSpotify = () => {
             <label for="password1" class="block text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Password</label>
             <Password id="password1" v-model="password" placeholder="Password" :toggleMask="true" class="mb-4" fluid :feedback="false"></Password>
 
-            <div class="flex items-center justify-between mt-2 mb-8 gap-8">
-              <div class="flex items-center">
-                <Checkbox v-model="checked" id="rememberme1" binary class="mr-2"></Checkbox>
-                <label for="rememberme1">Remember me</label>
-              </div>
-              <span class="font-medium no-underline ml-2 text-right cursor-pointer text-primary">Forgot password?</span>
-            </div>
+            
 
             <Button label="Sign In" class="w-full" @click="login" />
             <Button 
@@ -65,6 +59,8 @@ const loginWithSpotify = () => {
   style="font-family: 'Circular', sans-serif; background-color: #1DB954; border: none; color: white;"
 />
           </div>
+          <br>
+          <Button label="Register" class="w-full" @click="() => router.push('/auth/register')" />
         </div>
       </div>
     </div>
