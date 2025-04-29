@@ -16,7 +16,7 @@ onMounted(() => {
     localStorage.setItem('spotify_access_token', accessToken);
 
     // ✅ Redirect to home page or dashboard
-    router.push('/');
+    router.push('/app');
   } else {
     console.error('No access token found in URL!');
     alert('Spotify login failed!');

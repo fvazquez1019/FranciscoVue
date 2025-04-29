@@ -22,37 +22,7 @@ const model = ref([
         icon: 'pi pi-fw pi-sparkles',
         to: '/pages',
         items: [
-            {
-                label: 'Landing (remove later)',
-                icon: 'pi pi-fw pi-globe',
-                to: '/landing'
-            },
-            {
-                label: 'Auth (move to top right)',
-                icon: 'pi pi-fw pi-user',
-                items: [
-                    {
-                        label: 'Login',
-                        icon: 'pi pi-fw pi-sign-in',
-                        to: '/auth/login'
-                    },
-                    {
-                        label: 'Register',
-                        icon: 'pi pi-fw pi-sign-in',
-                        to: '/auth/Register'
-                    },
-                    {
-                        label: 'Error',
-                        icon: 'pi pi-fw pi-times-circle',
-                        to: '/auth/error'
-                    },
-                    {
-                        label: 'Access Denied',
-                        icon: 'pi pi-fw pi-lock',
-                        to: '/auth/access'
-                    }
-                ]
-            },
+
             {
                 label: 'Country Graph',
                 icon: 'pi pi-fw pi-map',
@@ -64,31 +34,23 @@ const model = ref([
                 icon: 'pi pi-fw pi-link',
                 to: '/pages/VennDiagram'
             },
-            
             {
-                label: 'Not Found (remove later)',
-                icon: 'pi pi-fw pi-exclamation-circle',
-                to: '/pages/notfound'
+                label: 'Mood Journey',
+                icon: 'pi pi-fw pi-face-smile',
+                to: '/pages/MoodJourney'
             },
-            {
-                label: 'Empty',
-                icon: 'pi pi-fw pi-circle-off',
-                to: '/pages/empty'
-            }
+            
+
+
         ]
     },
     {
-        label: 'Get Started',
+        label: 'Information',
         items: [
-            {
-                label: 'Documentation (remove later)',
-                icon: 'pi pi-fw pi-book',
-                to: '/documentation'
-            },
             {
                 label: 'View Source',
                 icon: 'pi pi-fw pi-github',
-                url: /*'https://github.com/primefaces/sakai-vue'*/ 'https://github.com/fvazquez1019/FranciscoVue',
+                url: 'https://github.com/fvazquez1019/FranciscoVue',
                 target: '_blank'
             }
         ]
