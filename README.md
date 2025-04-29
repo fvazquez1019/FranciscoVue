@@ -1,3 +1,1 @@
-Sakai is an application template for Vue based on the [create-vue](https://github.com/vuejs/create-vue), the recommended way to start a Vite-powered Vue projects.
-
-Visit the [documentation](https://sakai.primevue.org/documentation) to get started.
+Our Spotify visualizer allows users to find their music in new ways in order to grow their musical taste!
