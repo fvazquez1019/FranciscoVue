@@ -67,7 +67,7 @@ App will be available at [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 FranciscoVue/
@@ -86,17 +86,13 @@ FranciscoVue/
 
 ---
 
-## 🧪 Notes
+## Notes
 
 - Make sure to enable [Spotify Implicit Grant Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#implicit-grant-flow) for authentication.
 - Firebase functionality is optional and not required to run the project.
 
 ---
 
-## 📬 Feedback
+## Feedback
 
 This is a student-built project. All suggestions and improvements are welcome!
-
----
-
-Would you like this saved as a new `README.md` file and zipped?
