@@ -4,6 +4,8 @@ import { ref } from 'vue';
 import { auth } from '@/firebase/init';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useRouter } from 'vue-router';
+import db from '@/main';
+import {doc, setDoc} from 'firebase/firestore';
 
 const router = useRouter();
 const email = ref('');
@@ -12,11 +14,20 @@ const checked = ref(false);
 
 const saveUser = async () => {
   try {
-    await createUserWithEmailAndPassword(auth, email.value, password.value);
+    const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value);
+    const user = userCredential.user;
+
+    // Save user info to Firestore
+    await setDoc(doc(db, 'users', user.uid), {
+      email: user.email,
+      password : user.password,
+      createdAt: new Date().toISOString(),
+    });
+
     alert('Account created successfully!');
     email.value = '';
     password.value = '';
-    router.push('/')
+    router.push('/');
   } catch (e) {
     console.error("Error creating user:", e.message);
     alert(e.message);
