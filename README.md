@@ -9,7 +9,6 @@ Our Spotify visualizer allows users to find their music in new ways in order to 
 
 - Visualizes top Spotify genres and tracks
 - Interactive D3.js data plots
-- Persistent state management with Pinia
 - Dark mode toggle
 - Firebase backend integration (optional features)
 
